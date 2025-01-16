@@ -1,7 +1,7 @@
 # ¿Quién me gobierna?
 
 <p align="center">
-  <img src="ruta/a/tu/logo.png" alt="Logo de la aplicación">
+  <img src="https://github.com/FranciszekaMateu/Quien-te-Gobierna/blob/main/public/logo.png" alt="Logo de la aplicación">
 </p>
 
 ## Descripción del Proyecto
