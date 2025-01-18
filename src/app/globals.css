@@ -2,4 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100;
+    font-feature-settings: "liga" 1, "kern" 1;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .serif-title {
+    @apply font-playfair text-gray-900 dark:text-white tracking-tight;
+    font-feature-settings: "lnum", "pnum";
+  }
+  
+  .article-text {
+    @apply font-source-serif text-gray-700 dark:text-gray-300 leading-relaxed;
+  }
+  
+  .header-divider {
+    @apply w-full h-[1px] bg-gray-200 dark:bg-gray-700;
+  }
+  
+  .nav-link {
+    @apply text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors;
+  }
+  
+  .section-title {
+    @apply font-playfair text-2xl font-bold text-gray-900 dark:text-white mb-6 pb-2 border-b border-gray-200 dark:border-gray-700;
+  }
+}
+
+.animate-typing {
+  @apply border-r-2 border-black dark:border-white;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { @apply border-black dark:border-white }
+}
+
+.elegant-shadow {
+  @apply shadow-lg dark:shadow-gray-900/30;
+}
+
 
